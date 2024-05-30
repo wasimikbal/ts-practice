@@ -7,7 +7,7 @@ import Button3 from './components/Button3';
 function App() {
   return (
     <div className="App">
-      <Button3 onclick={()=>{"Something to be done here"}}/>
+      <Button3 children={"ClickM"}/>
     </div>
   );
 }

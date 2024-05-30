@@ -2,14 +2,14 @@ import React from 'react'
 
 //Button props object
 type ButtonProps = {
-  onclick: () => void
+  children: React.ReactNode
 }
 
-const Button3 = ({onclick}: ButtonProps) => {
+const Button3 = ({children}: ButtonProps) => {
    
 
   return (
-    <button onClick={onclick}>Click Me</button>
+    <button>{children}</button>
   )
 }
 
