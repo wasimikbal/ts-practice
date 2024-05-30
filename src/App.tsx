@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
-import Button from './components/Button';
-import Button2 from './components/Button2';
-import Button3 from './components/Button3';
+import React from "react";
+import "./App.css";
+import Button4 from "./components/Button4";
+import { useState } from "react";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <div className="App">
-      <Button3 children={"ClickM"}/>
+      <Button4 setCount={setCount}/>
     </div>
   );
 }
