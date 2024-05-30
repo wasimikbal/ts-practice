@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Button4 from "./components/Button4";
+import Button5 from "./components/Button5";
 import { useState } from "react";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Button4 type="submit" autoFocus={true} onClick={()=>{}} variant="alpha"/>
+      <Button5 type="submit" autoFocus={true} onClick={()=>{}} variant="alpha"/>
     </div>
   );
 }
