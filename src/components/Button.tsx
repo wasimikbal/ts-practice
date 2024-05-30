@@ -8,6 +8,7 @@ type ButtonProps = {
   backgroundColor: color,
   fontSize: number,
   pillShape?: boolean
+  padding: number[]
 }
 
 const Button = ({backgroundColor, fontSize, pillShape}: ButtonProps) => {
