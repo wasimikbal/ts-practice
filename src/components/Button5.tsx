@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-
-
 //Button props object
 type ButtonProps = {
     bgcolor: string,
@@ -13,10 +10,14 @@ type ButtonWithPaddingProps = ButtonProps & {
     padding: number
 }
 
+
+
+
 const Button5 = ({}: ButtonProps) => {
-   
+   const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {}
+
   return (
-    <button>Click Me</button>
+    <button onClick={handleClick}>Click Me</button>
   )
 }
 
