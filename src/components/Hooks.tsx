@@ -7,6 +7,9 @@ type User = {
 
 
 const Hooks = () => {
+
+    const states = ['Awake', 'Sleep', 'Working'] as const // make the array readonly 
+
     const [user, setUser] = useState<User | null>(null) // Initially it will be null until fetched and set
 
     const ref = useRef<HTMLButtonElement | null>(null);
