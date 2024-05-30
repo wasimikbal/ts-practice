@@ -2,8 +2,10 @@ import React, { useRef, useState } from 'react'
 
 type User = {
     name: string,
-    age: string
+    sessionId: string
 }
+
+type Guest = Omit<User, 'name'> // leave the user with just sessionId
 
 
 const Hooks = () => {
