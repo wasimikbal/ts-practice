@@ -3,7 +3,7 @@ import React from 'react'
 type ButtonProps = {
   backgroundColor: string,
   fontSize: number,
-  pillShape: boolean
+  pillShape?: boolean
 }
 
 const Button = ({backgroundColor, fontSize, pillShape}: ButtonProps) => {
