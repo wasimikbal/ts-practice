@@ -8,9 +8,11 @@ interface IButtonProps{
 
 
 //Button props object
-type ButtonProps = React.ComponentProps<'button'>;
+type ButtonProps = React.ComponentPropsWithoutRef<'button'> & {
+    variant: 'alpha' | 'beta'
+};
 
-const Button4 = ({type, autoFocus, ...rest}: ButtonProps) => {
+const Button4 = ({type, autoFocus, variant, ...rest}: ButtonProps) => {
    
   return (
     <button type={type} autoFocus={autoFocus} {...rest}>Click Me</button>
