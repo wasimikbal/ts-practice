@@ -6,9 +6,11 @@ import { useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
 
+
+
   return (
     <div className="App">
-      <Button4 setCount={setCount}/>
+      <Button4 key="value" key2="value2"/>
     </div>
   );
 }
