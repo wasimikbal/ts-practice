@@ -8,11 +8,9 @@ interface IButtonProps{
 
 
 //Button props object
-type ButtonProps = {
-  setCount: React.Dispatch<React.SetStateAction<number>>;
-}
+type ButtonProps = React.ComponentProps<'button'>;
 
-const Button4 = ({key, key2}: IButtonProps) => {
+const Button4 = ({type, autoFocus}: ButtonProps) => {
    
   return (
     <button>{}</button>
