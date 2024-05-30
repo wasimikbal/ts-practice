@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Button4 type="submit" autoFocus={true}/>
+      <Button4 type="submit" autoFocus={true} onClick={()=>{}}/>
     </div>
   );
 }

@@ -10,10 +10,10 @@ interface IButtonProps{
 //Button props object
 type ButtonProps = React.ComponentProps<'button'>;
 
-const Button4 = ({type, autoFocus}: ButtonProps) => {
+const Button4 = ({type, autoFocus, ...rest}: ButtonProps) => {
    
   return (
-    <button>{}</button>
+    <button type={type} autoFocus={autoFocus} {...rest}>Click Me</button>
   )
 }
 
