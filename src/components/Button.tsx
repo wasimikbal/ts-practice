@@ -1,7 +1,11 @@
 import React from 'react'
 
+//Union type
+type color = 'bg-blue-500' | 'bg-green-500' | 'bg-red-500'
+
+//Button props object
 type ButtonProps = {
-  backgroundColor: string,
+  backgroundColor: color,
   fontSize: number,
   pillShape?: boolean
 }
