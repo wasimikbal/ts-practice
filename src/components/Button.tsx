@@ -1,13 +1,19 @@
 import React from 'react'
 
-const Button = () => {
+type ButtonProps = {
+  backgroundColor: string,
+  fontSize: number,
+  pillShape: boolean
+}
+
+const Button = ({backgroundColor, fontSize, pillShape}: ButtonProps) => {
     
   const DoSomething = (name: string, age: number): string => {
     return "string to be returned";
   }
 
   return (
-    <button className='bg-blue-500 text-white rounded px-4 py-2'>Click Me</button>
+    <button className={`${backgroundColor} text-white rounded px-4 py-2`}>Click Me</button>
   )
 }
 
