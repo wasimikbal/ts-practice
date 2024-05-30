@@ -2,19 +2,12 @@ import React from 'react';
 import './App.css';
 import Button from './components/Button';
 import Button2 from './components/Button2';
+import Button3 from './components/Button3';
 
 function App() {
   return (
     <div className="App">
-      <Button2 style={{
-        backgroundColor: 'blue',
-        fontSize: 24,
-        color: 'white',
-        padding: '1rem 2rem',
-        borderRadius: 8,
-        borderColor: 'transparent'
-
-      }}/>
+      <Button3 onclick={()=>{"Something to be done here"}}/>
     </div>
   );
 }
