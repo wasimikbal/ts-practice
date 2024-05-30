@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 type User = {
     name: string,
@@ -9,9 +9,12 @@ type User = {
 const Hooks = () => {
     const [user, setUser] = useState<User | null>(null) // Initially it will be null until fetched and set
 
+    const ref = useRef<HTMLButtonElement | null>(null);
+
 
   return (
     <>
+    <button ref={ref}></button>
     </>
   )
 }
